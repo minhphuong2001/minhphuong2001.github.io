@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ------menu------ */
+.menu{
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    position: fixed;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(148, 146, 146);
+}
+li{
+    list-style-type: none;
+}
+.menu li{
+    width: 100%;
+    padding: 8px;
+}
+.left{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 2%;
+    text-align: center;
+}
+.menu li:hover{
+    background-color: rgb(167, 167, 166);
+}
+.left a:hover{
+    color: black;
+}
+.fa{
+    margin-right: 8px;
+}
+.right li:hover{
+    background-color: red;
+}
+/* ----------logo------------ */
+.image{
+    background-image: url(https://www.w3schools.com/w3images/parallax1.jpg);
+    min-height: 500px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 30px;
+    letter-spacing: 8px;
+    background-color: black;
+    padding: 15px;
+}
+/* -------content------------ */
+.content{
+    margin: 5% auto;
+    color: rgb(148, 143, 143);
+}
+.me{
+    font-size: 30px;
+    text-align: center;
+    margin: 2% 0 1% 0;
+}
+.text{
+    text-align: center;
+    margin: 2% 0 1% 0;
+    font-size: 15px;
+}
+.text-text{
+    text-align: justify;
+    width: 70%;
+    margin: 0.5% auto;
+}
+.user{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+.avatar{
+    width: 450px;
+    height: 350px;
+    margin-top: 5%;
+}
+.user1{
+    width: 35%;
+}
+.user1:hover{
+    opacity: 0.7;
+}
+.user2{
+    width: 40%;
+    text-align: justify;
+    margin-top: 5%;
+}
+.icon{
+    font-size: 20px;
+    margin: 0 0 2% 15%;
+}
+.icon-icon{
+    margin-top: 2%;
+    letter-spacing: 10px;
+}
+.icon p{
+    letter-spacing: 8px;
+}
+.percent{
+    background-color: rgb(211, 197, 197);
+    width: 80%;
+    height: 40px;
+    margin-top: 1%;
+}
+.percent-percent{
+    background-color: rgb(122, 122, 122);
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+/* ------------nav----------- */
+.nav{
+    background-color: rgb(102, 102, 102);
+    width: 94%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    padding: 3%;
+}
+.part1{
+    font-size: 18px;
+    line-height: 30px;
+}
+/* -----------background---------- */
+.image2{
+    background-image: url(https://www.w3schools.com/w3images/parallax2.jpg);
+    min-height: 500px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo2{
+    position: absolute;
+    text-align: center;
+    top: 255%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 35px;
+    letter-spacing: 8px;
+}
+/* -----main main---- */
+.image3{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1%;
+}
+.anh-anh{
+     margin-right: 1.5%;
+}
+.anh-anh:hover{
+    opacity: 0.6;
+}
+.button{
+    background-color: rgb(219, 216, 216);
+    text-align: center;
+    margin: 2% auto;
+    width: 8%;
+    padding: 15px;
+    font-size: 18px;
+    color: black;
+    border: 2px solid rgb(93, 155, 236);
+}
+.button:hover{
+    background-color: gray;
+}
+/* ----background 3 */
+.image4{
+    background-image: url(https://www.w3schools.com/w3images/parallax3.jpg);
+    min-height: 500px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo4{
+    position: absolute;
+    text-align: center;
+    top: 420%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 35px;
+    letter-spacing: 8px;
+}
+/* ---------final--------- */
+.final{
+    margin: 2% auto;
+    display: flex;
+    width: 70%;
+}
+.left-final img{
+    width: 350px;
+    height: 200px;
+    margin: auto;
+}
+.right-final{
+    margin-left: 5%;
+}
+.right-final .fa{
+    font-size: 24px;
+    margin: 2% 1% 5% 0;
+}
+.send{
+    width: 100%;
+}
+.input{
+    width: 250px;
+    height: 40px;
+    color: gray;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.input2{
+    width: 530px;
+    height: 40px;
+    color: gray;
+    padding-left: 20px;
+    font-size: 16px;
+    margin-top: 2%;
+}
+.button2{
+    float: right;
+    background-color: black;
+    color: white;
+    margin: 2% 0 5% 0;
+    width: 35%;
+    padding: 10px;
+    font-size: 16px;
+}
+.button2:hover{
+    background-color: rgb(172, 159, 159);
+    color: black;
+}
+/* ----------footer--------- */
+.footer{
+    background-color: rgb(153, 151, 151);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+}
+.footer i{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 2%;
+}
+.footer i:hover{
+    opacity: 0.5;
+}
+.footer:hover{
+    background-color: black;
+}
+.footer .phuong{
+    height: 120px;
+    font-size: 40px;
+    line-height: 120px;
+    text-align: center;
+    /* color: #FFF;
+    text-shadow: 0 0 150px #FFF, 0 0 60px #FFF, 0 0 10px #FFF;
+    */
+    color: #fff; 
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 
+    0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+    letter-spacing: 5px; 
+}
