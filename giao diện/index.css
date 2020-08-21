@@ -1,0 +1,117 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.wrapper{
+	width: 100%;
+}
+.header{
+	width: 100%;
+	height: 50px;
+	background-color: lightblue;
+}
+.row{
+	width: 85%;
+	height: 100%;
+	margin: auto;
+}
+.header .left{
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+.header .right{
+	width: 40%;
+	height: 100%;
+	float: right;
+}
+ul{
+	list-style-type: none;
+}
+.header ul li{
+	display: inline-block;
+	line-height: 50px;
+	color: white;
+}
+.header .right li{
+	padding-left: 28px;
+}
+.header ul li img{
+	position: relative;
+	top: 3px;
+}
+.logo{
+	width: 100%;
+	height: 150px;
+	padding: 20px 10px 10px 10px;
+	text-align: center;
+}
+.logo img{
+	height: 100%;
+}
+.menu{
+	width: 100%;
+	height: 50px;
+	background-color: lightblue;
+}
+.menu .left{
+	width: 25%;
+	height: 100%;
+	float: left;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	background-color: gray;
+}
+.menu .right {
+	width: 75%;
+	height: 100%;
+	float: left;
+}
+.menu .right li{
+	display: inline-block;
+    line-height: 50px;
+    padding-right: 52px;
+    position: relative;
+    float: left;
+}
+.menu .right li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+.menu .right li a:hover{
+	background-color: #94F1F9;
+}
+/*.content{
+	width: 85%;
+	height: 100%;
+	margin: auto;
+}*/
+.content .left{
+	width: 25%;
+	height: auto;
+	border: 1px solid gray;
+	box-sizing: border-box;
+	border-radius: 2px;
+	float: left;
+}
+.content .left li{
+	padding: 15px 0px 15px 90px;
+	border-bottom: 1px solid #c7b7b7;
+	font-weight: bold;
+}
+.content .left li a{
+	text-decoration: none;
+	color: #797171;
+}
+.content .right{
+	float: left ;
+	width: 75%;
+	height: 350px;
+}
+.content .right img{
+	width: 100%;
+	height: 100%;
+
+}
