@@ -1,0 +1,165 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+/* ------menu------- */
+.menu{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 18px;
+    position: fixed;
+}
+li{
+    list-style-type: none;
+}
+.menu li{
+    width: 100%;
+    padding: 8px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu li:hover{
+    background: rgb(206, 202, 202);
+}
+.left{
+    padding: 8px 16px;
+}
+.right{
+   display: flex;
+   justify-content: left;
+    padding: 8px 16px;
+    margin-right: 5%;
+    letter-spacing: 4px;
+}
+/* ----------header---------- */
+.background{
+    width: 100%;
+    height: 100%;
+}
+.text{
+    margin-top: 16px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 4px;
+}
+.br{
+    color: #fff;
+    font-size: 36px;
+    background-color: black;
+    opacity: 0.7;
+    padding: 8px 16px;
+}
+.art{
+    color: #fff;
+    font-weight: normal;
+}
+/* ---------content------------- */
+ h2{
+    padding: 2%;
+    font-weight: normal;
+}
+hr{
+    margin-bottom: 2%;
+    opacity: 0.7;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+}
+.image1{
+    position: relative;
+    margin-right: 1%;
+}
+.text-text {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0 3% 2%;
+}
+/* -----content continue----- */
+.content2{
+    padding: 2%;
+}
+.mainmain{
+    display: flex;
+    justify-content: space-between;
+}
+.image2{
+    margin: 2% 1% 0 0;
+}
+.mainmain p{
+    margin: 10px 0 10px 0;
+}
+.button{
+    width: 95%;
+    background-color: rgb(219, 217, 217);
+    text-align: center;
+    padding: 10px;
+}
+.button:hover{
+    background-color: rgb(180, 179, 179);
+}
+/* ---------contact--------- */
+.contact{
+    padding: 2%;
+}
+.input{
+    width: 95%;
+    color: gray;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 1%;
+}
+.button2{
+    background-color: black;
+    width: 20%;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    margin: 2% 0 2% 0;
+}
+.button2:hover
+{
+    background-color: rgb(180, 179, 179);
+}
+/* ----footer---- */
+.footer{
+    width: 95%;
+    background-color: rgb(134, 189, 240);
+    color: rgb(245, 68, 68);
+    text-align: center;
+    padding: 20px;
+}
+.footer a{
+    color: rgb(76, 197, 5);
+    font-size: 20px;
+}
+.footer .phuong{
+    height: 120px;
+    font-size: 40px;
+    line-height: 120px;
+    text-align: center;
+    /* color: #FFF;
+    text-shadow: 0 0 150px #FFF, 0 0 60px #FFF, 0 0 10px #FFF;
+    */
+    color: #fff; 
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 
+    0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+    letter-spacing: 5px; 
+}
