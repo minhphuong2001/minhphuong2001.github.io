@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    background-color: rgba(129, 162, 235, 0.953);
+    width: 100%;
+    height: 60px;
+    
+}
+.menu ul{
+    list-style-type: none;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(129, 162, 235, 0.953);
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+.menu ul li{
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    display: inline-table;
+    position: relative;
+}
+.menu ul li a{
+    color: white;
+    display: block;
+}
+.menu ul li a:hover{
+    background-color: rgba(90, 240, 103, 0.952);
+}
+.menu ul li > .sub-menu{
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+.menu ul li:hover > .sub-menu{
+    display: block;
+}
+.menu .sub-menu .sub-menu1{
+    display: none;
+    width: 100%;
+    position: absolute;
+
+}
+.sub-menu1 , .sub-menu2{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+}
+.sub-menu li:hover > .sub-menu1{
+    display: block;
+}
+/* .sub-menu2{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+} */
+.sub-menu1 li:hover > .sub-menu2{
+    display: block;
+}
