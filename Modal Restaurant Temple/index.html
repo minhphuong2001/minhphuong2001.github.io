@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+    <div class="header">
+        <div class="background">
+            <img src="https://www.w3schools.com/w3images/onepage_restaurant.jpg" alt="" width="100%" height="830">
+            <div class="logo">
+                <p>Logo</p>
+            </div>
+            <div class="text">
+                <p>monday - friday 10-23 | Saturday 14-02</p>
+                <br>
+                <p style="font-size: 18px;">42 Village St, HaNoi</p> 
+                <br>
+               <p> Made by Phương Phương</p>
+            </div>
+        </div>
+        <div class="button">
+            <p><button onclick="document.getElementById('menu').style.display='block'" class="button_main menu_margin" >Menu</button></p>
+            <p><button onclick="document.getElementById('contact').style.display='block'" class="button_main">Contact</button></p>
+        </div>
+    </div>
+ 
+        <div id="menu" class="content">
+              <!-- menu modal -->
+            <div class="content_1">
+                <div class="content_header ">
+                    <span onclick="document.getElementById('menu').style.display='none'" class="daux">x</span>
+                    <h1>Starters</h1>
+                </div>
+                <div class="part1">
+                    <p>Tomato Soup <b>$2.50</b></p>
+                    <p>Chicken Salad <b> $3.50</b></p>
+                    <p>Bread and Butter<b> $1.00</b></p> 
+                </div>
+                <div class="content_header">
+                    <h1>Main Courses</h1>
+                </div>
+                <div class="part1">
+                    <p>Grilled Fish and Potatoes<b> $850</b></p>
+                    <p>Italian Pizza<b> $5.50</b></p>
+                    <p>Veggie Pasta<b></b> $4.00</p>
+                    <p>Chicken and Potatoes<b> $6.50</b></p>
+                    <p>Deluxe Burger<b> $5.00</b></p>
+                </div>
+                <div class="content_header">
+                    <h1>Desserts</h1>
+                </div>
+                <div class="part1">
+                    <p>Fruit Salaf<b> $2.5</b></p>
+                    <p>Ice Cream<b> $3.00</b></p>
+                    <p>Chocolate Cake<b> &4.00</b></p>
+                    <p>Cheese<b> $5.25</b></p>
+                </div>
+            </div>
+        </div>
+            <!-- contact modal -->
+            <div id="contact" class="content">
+                <div class="content_2">
+                    <div class="content_header">
+                        <span onclick="document.getElementById('contact').style.display='none'" class="daux">x</span>
+                        <h1>Contact</h1>
+                    </div>
+                    <p class="part1">Reserve a table, ask for today's special or just send us a message:</p>
+                    <form action="send.php">
+                        <input type="text" name="Name" required name="Name" placeholder="Name" class="input">
+                        <input type="number" required name="Name" placeholder="How many people" class="input">
+                        <input type="datetime-local" placeholder="Date and time" required="" name="date" value="2020-10-05T10:05" class="input">
+                        <input type="name" required name="Name" placeholder="Message \ Special requirement" class="input">
+                        <button type="submit" class="send">SEND MESSAGE</button>
+                    </form>
+                </div>
+                
+            </div>
+        
+
+    
+</body>
+</html>
