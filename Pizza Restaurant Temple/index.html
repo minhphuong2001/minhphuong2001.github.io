@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#menu">MENU</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+    <!-- BACKGROUND  -->
+    <div class="header" id="home">
+        <div class="background">
+            <div class="between">
+                THIN
+                <br>
+                CRUST PIZZA
+                <p><a href="#menu"  class="printer" >LET ME SEE THE MENU</a></p>
+            </div>
+            <div class="header_footer">
+                Open from 10AM to 12PM
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="container" id="menu">
+        <div class="content">
+            <h1>THE MENU</h1>
+            <div class="menu_content">
+                <button onclick="select('pizza','salad','starter'); show('list_pizza','list_salad','list_starter')" 
+                id="pizza" class="selected">PIZZA</button>
+                <button onclick="select('salad','pizza','starter'); show('list_salad','list_pizza','list_starter')" 
+                id="salad" class="">SALAD</button>
+                <button onclick="select('starter','salad','pizza'); show('list_starter','list_salad','list_pizza')" 
+                id="starter" class="">STARTER</button>
+            </div>
+            <div class="menu_list">
+                <!-- list pizza -->
+                <div id="list_pizza" class="menu_list_item show">
+                    <h1>
+                        <b>Margherita <span class="seasonal">delicious</span></b>
+                        <span class="money">$12.50</span>
+                    </h1>
+                    <br>
+                    <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                    <br>
+                    <hr>
+                    <h1>
+                        <b>FORMAGGIO</b>
+                        <span class="money">$15.50</span>
+                    </h1>
+                    <br>
+                    <p>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                    <br>
+                    <hr>
+                    <h1>
+                        <b>CHICKEN</b>
+                        <span class="money">$17.00</span>
+                    </h1>
+                    <br>
+                    <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                    <br>
+                    <hr>
+                    <h1>
+                        <b>Pineapple'o'clock</b>
+                        <span class="money">$16.50</span>
+                    </h1>
+                    <br>
+                    <p>Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                    <br>
+                    <hr>
+                    <h1>
+                        <b>Meat Town <span class="hot">hot!</span> </b>
+                        <span class="money">$20.00</span>
+                    </h1>
+                    <br>
+                    <p>Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                    <br>
+                    <hr>
+                    <h1>
+                        <b>PARMA <span class="new">new</span> </b>
+                        <span class="money">$21.50</span>
+                    </h1>
+                    <br>
+                    <p>Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+                    <br>
+                </div>
+                <!-- list salad -->
+                <div id="list_salad" class="menu_list_item">
+                    <h1>
+                        <b>Lasagna <span class="new">popular</span> </b>
+                        <span class="money">$13.50</span>
+                    </h1>
+                    <br>
+                    <p>Special sauce, mozzarella, parmesan, ground beef</p>
+                    <br>
+                    <hr>
+                    <h1>
+                        <b>Ravioli</b>
+                        <span class="money">$14.50</span>
+                    </h1>
+                    <br>
+                    <p>Ravioli filled with cheese</p>
+                    <br>
+                    <hr>
+                    <h1>
+                        <b>Spaghetti Classica</b>
+                        <span class="money">$11.00</span>
+                    </h1>
+                    <br>
+                    <p>Fresh tomatoes, onions, ground beefl</p>
+                    <br>
+                    <hr>
+                    <h1>
+                        <b>Seafood pasta</b>
+                        <span class="money">$25.50</span>
+                    </h1>
+                    <br>
+                    <p>Salmon, shrimp, lobster, garlic</p>
+                    <br>
+                </div>
+                <!-- list staeter -->
+                <div id="list_starter" class="menu_list_item">
+                    <h1>
+                        <b>Today's Soup <span class="seasonal">seasonal</span> </b>
+                        <span class="money">$5.50</span>
+                    </h1>
+                    <br>
+                    <p>Ask the waiter</p>
+                    <br>
+                    <hr>
+                    <h1>
+                        <b>Bruschetta</b>
+                        <span class="money">$8.50</span>
+                    </h1>
+                    <br>
+                    <p>Bread with pesto, tomatoes, onion, garlic</p>
+                    <br>
+                    <hr>
+                    <h1>
+                        <b>Garlic bread</b>
+                        <span class="money">$9.50</span>
+                    </h1>
+                    <br>
+                    <p>Grilled ciabatta, garlic butter, onions</p>
+                    <br>
+                    <hr>
+                    <h1>
+                        <b>Tomozzarella</b>
+                        <span class="money">$10.50</span>
+                    </h1>
+                    <br>
+                    <p>Tomatoes and mozzarella</p>
+                    <br>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <!-- about -->
+    <div class="about" id="about">
+        <div class="content_about">
+            <h1>ABOUT</h1>
+            <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor 
+             sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <br>
+            <div class="avatar">
+                <div>
+                    <p>The Chef? Mr. Italiano himself</p>
+                    <br>
+                    <p>We are proud of our interiors.</p>
+                </div>
+                  <img src="https://www.w3schools.com/w3images/chef.jpg" alt="" class="avatar_man">
+            </div>
+            <img src="https://www.w3schools.com/w3images/onepage_restaurant.jpg" alt="" width="100%">
+            <h2 style="margin: 3% 0 4% 0; font-size: 35px;">OPENING HOURS</h2>
+            <div class="about_text">
+                <div>
+                    <p>Mon & Tue CLOSED</p>
+                    <p>Wednesday 10.00 - 24.00</p>
+                    <p>Thursday 10:00 - 24:00</p>
+                </div>
+                <div>
+                    <p>Friday 10:00 - 12:00</p>
+                    <p>Saturday 10:00 - 23:00</p>
+                    <p>Sunday Closed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="https://www.w3schools.com/w3images/map.jpg" alt="" width="100%">
+    <!-- contact -->
+    <div class="contact" id="contact">
+        <div class="content_contact">
+            <h1>contact</h1>
+            <p>Find us at some address at some place or call us at 05050515-122330</p>
+            <p><span style="background-color: #000; padding: 2px;"> Fly! </span> We offer full-service catering for any event, large or small. We understand your needs 
+        and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+        <p> Reserve a table, ask for today's special or just send us a message:</p>
+        <form action="send.php">
+            <input type="text" name="Name" required name="Name" placeholder="Name" class="input">
+            <input type="number" required name="Name" placeholder="How many people" class="input">
+            <input type="datetime-local" placeholder="Date and time" required="" name="date" value="2020-10-05T10:05" class="input">
+            <input type="name" required name="Name" placeholder="Message \ Special requirement" class="input">
+            <button type="submit" class="send">SEND MESSAGE</button>
+        </form>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <span style="font-size: 20px;"> Made by  </span>
+        <span class="phuongphuong">Minh Phương Đỗ</span>
+    </div>
+    
+    <script>
+        function show(id1, id2,id3) {
+            var x = document.getElementById(id1);
+            var y = document.getElementById(id2);
+            var z = document.getElementById(id3);
+            if (x.className.indexOf("show") == -1) {
+                x.className += " show";
+                y.className = y.className.replace(" show", "");
+                z.className = z.className.replace(" show", "","");
+            }
+        }
+        function select(id1, id2,id3) {
+            var x = document.getElementById(id1);
+            var y = document.getElementById(id2);
+            var z = document.getElementById(id3);
+            if (x.className.indexOf("selected") == -1) {
+                x.className += " selected";
+                y.className = y.className.replace("selected", "");
+                z.className = z.className.replace("selected", "","");
+            }
+        }
+    </script>
+</body>
+</html>
