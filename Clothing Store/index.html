@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script>
+        function show(id){
+            var x = document.getElementById(id);
+            if(x.className.indexOf("show") == -1){
+                x.className += " show";
+            } else {
+                x.className = x.className.replace(" show","");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="nav-top">
+                <h1>LOGO <i onclick="show('nav-left')" class="fa fa-bars"></i></h1>
+            </div>
+            <div class="nav-left" id="nav-left">
+                <h1>LOGO</h1>
+                <div class="nav-list">
+                    <a class="button" href="#">Shirts</a>
+                    <a class="button" href="#">Dresses</a>
+                    <a class="button jeans" onclick="show('nav-list-jeans')">Jeans <i class="fa fa-caret-down"></i></a>
+                    <div id="nav-list-jeans" >
+                        <a class="button" href="#"><i class="fa fa-caret-right"></i> Skinny</a>
+                        <a class="button" href="#">Relaxed</a>
+                        <a class="button" href="#">Bootcut</a>
+                        <a class="button" href="#">Straight</a>
+                    </div>
+                    <a class="button" href="#">Jackets</a>
+                    <a class="button" href="#">Gymwear</a>
+                    <a class="button" href="#">Blazers</a>
+                    <a class="button" href="#">Shoes</a>
+                </div>
+                <div class="nav-footer">
+                    <a class="button" href="#contact">Contact</a>
+                    <a class="button" onclick="show('newsletter')">Newsletter</a>
+                    <a class="button" href="#subscribes">Subscrise</a>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+        <div id="newsletter">
+            <div class="newsletter-main">
+                <h2>NEWSLETTER <i onclick="show('newsletter')" class="fa fa-times button"></i></h2>
+                <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+                <input type="text" placeholder="Enter e-mail">
+                <button class="button">Subcribe</button>
+            </div>
+        </div>
+    <!-- content -->
+    <div class="content">
+        <div class="header">
+            <h2>Jeans</h2>
+            <div class="icon">
+                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+        <div class="background">
+            <img src="https://www.w3schools.com/w3images/jeans.jpg" alt="" width="100%">
+            <div class="background-content">
+                <h1>New arrivals</h1>
+                <p>COLLECTION 2019</p>
+                <button class="button">SHOP NOW</button>
+            </div>
+        </div>
+        <!-- item jean -->
+        <div class="shop-main">
+            <p>8 items</p>
+            <div class="shop-main-item">
+                <div class="shop-item">
+                    <img src="https://www.w3schools.com/w3images/jeans1.jpg" alt="" width="100%">
+                    <p>Ripped Skinny Jeans</p>
+                    <b>$24.99</b>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-item-special">
+                        <img src="https://www.w3schools.com/w3images/jeans2.jpg" alt="" width="100%">
+                        <span>New</span>
+                        <button class="button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                    <p>Mega Ripped Jeans</p>
+                    <b>$19.99</b>
+                </div>
+                <div class="shop-item">
+                    <img src="https://www.w3schools.com/w3images/jeans3.jpg" alt="" width="100%">
+                    <p>Washed Skinny Jeans</p>
+                    <b>$20.05</b>
+                </div>
+                <div class="shop-item">
+                    <img src="https://www.w3schools.com/w3images/jeans4.jpg" alt="" width="100%">
+                    <p>Vintaged Skinny Jeans</p>
+                    <b>$14.99</b>
+                </div>
+                <div class="shop-item">
+                    <img src="https://www.w3schools.com/w3images/jeans2.jpg" alt="" width="100%">
+                    <p>Mega Ripped Jeans</p>
+                    <b>$19.99</b>
+                </div>
+                <div class="shop-item">
+                    <img src="https://www.w3schools.com/w3images/jeans3.jpg" alt="" width="100%">
+                    <p>Washed Skinny Jeans</p>
+                    <b>$20.05</b>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-item-special">
+                        <img src="https://www.w3schools.com/w3images/jeans4.jpg" alt="" width="100%">
+                        <span>Sale</span>
+                        <button class="button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                    <p>Vintaged Skinny Jeans</p>
+                    <p style="color: rgb(119, 25, 207);">$14.99</p>
+                </div>
+                <div class="shop-item">
+                    <img src="https://www.w3schools.com/w3images/jeans1.jpg" alt="" width="100%">
+                    <p>Ripped Skinny Jeans</p>
+                    <b>$24.99</b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- subscribe -->
+    <div id="subscribes">
+        <div class="subscribe">
+            <h1>Subscribe</h1>
+            <p>To get special offers and VIP treatment:</p>
+            <input type="text" placeholder="Enter e-mail">
+            <button class="button">Subcribe</button>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="contact-main">
+            <div class="contact-form">
+                <h3>Contact</h3>
+                <p>Question?Go Ahead</p>
+                <form action="">
+                    <input type="text" placeholder="Name" required>
+                    <input type="text" placeholder="Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <input type="text" placeholder="Message" required>
+                    <button class="button">Send</button>
+                </form>
+            </div>
+            <div class="about">
+                <h3>ABOUT</h3>
+                <a href="">About us</a>
+                <a href="">We're hiding</a>
+                <a href="">Support</a>
+                <a href="">Find store</a>
+                <a href="">SHipment</a>
+                <a href="">Payment</a>
+                <a href="">Gift card</a>
+                <a href="">Return</a>
+                <a href="">Help</a>
+            </div>
+            <div class="store">
+                <h3>STORE</h3>
+                <p><i class="fa fa-map-marker"></i>Minh Phương Đỗ</p>
+                <p><i class="fa fa-phone"></i> 0389247621</p>
+                <p><i class="fa fa-envelope"></i> minhphuong2001@gmail.com</p>
+                <h3>We accept</h3>
+                <p><i class="fa fa-cc-amex"></i> Amex</p>
+                <p><i class="fa fa-credit-card"></i> Credit card</p>
+                <br>
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-snapchat"></i>
+                <i class="fa fa-pinterest-p"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin-in"></i>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Made by <span class="phuongphuong">Minh Phương Đỗ</span></p>
+    </div>
+</body>
+</html>
