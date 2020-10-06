@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ============ header ============ */
+.header{
+    background-color: rgb(124, 168, 250);
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.header_1{
+    background-color: orange;
+    position: absolute;
+    width: 110%;
+    height: 200px;
+    bottom: 0;
+    border-radius: 40% 30%;
+    transform: translateY(50%);
+}
+.avatar{
+    display: flex;
+    margin: 0 10%;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.ava{
+    z-index: 1;
+}
+.ava img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;  
+}
+.name{
+    color: white;
+    font-size: 28px;
+    flex-basis: 80%;
+    font-family: "Lobster", sans-serif;
+    letter-spacing: 2px;
+}
+.name p:last-child{
+    font-family: "Kalam", sans-serif;
+    margin-left: 60px;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    
+}
+.social .fab{
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+}
+.social .fab:hover{
+    color: rgb(248, 94, 66);
+}
+/* ===========informatin ============ */
+.information{
+    position: relative;
+    width: 90%;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    border: 4px solid rgb(253, 196, 71);
+    border-radius: 50%;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.information::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid rgb(253, 196, 71);
+    top: 50%;
+    left: -2%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+}
+.information::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid rgb(253, 196, 71);
+    top: 50%;
+    right: -6%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+}
+/* ========== container =========== */
+.container{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-family: "Courgette",sans-serif;
+    margin-bottom: 15px;
+}
+.container_left{
+    flex-basis: 70%;
+}
+.container_left h2{
+    background-color: rgb(93, 117, 253);
+    color: white;
+    font-size: 28px;
+    padding: 8px 12px;
+    letter-spacing: 4px;
+}
+.list_friend{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.friend_box{
+    flex-basis: 29%;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+.friend_box>p{
+    background-color: rgb(85, 172, 172);
+    padding: 5px 0;
+    margin-top: -4px;  
+    padding-left: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+/* ----blog---- */
+.container_right{
+    flex-basis: 27%;
+}
+.container_right h2{
+    background-color: rgb(93, 117, 253);
+    color: white;
+    font-size: 28px;
+    padding: 8px 12px;
+    letter-spacing: 4px;
+}
+.list_blog{
+    display: flex;
+    border: 2px solid  #3B5998;
+    padding: 5px;
+    margin: 5px 0;
+}
+.list_blog img{
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+}
+.list_blog p{
+    padding-left: 15px;
+    padding-top: 15px;
+    
+}
+/* ========== footer====== */
+.footer{
+    background-color: #000;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+.hit{
+    color: transparent;
+    -webkit-text-stroke: 5px rgb(248, 141, 70); 
+    letter-spacing: 5px; 
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.phuongphuong{
+    font-family: "Kalam", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #ced6e0;
+    text-shadow: 0 0 5px rgb(241, 233, 233), 0 0 10px rgb(241, 233, 233), 0 0 15px rgb(241, 233, 233), 
+    0 0 20px #67e6dc, 0 0 30px #67e6dc, 0 0 40px #67e6dc, 0 0 50px #67e6dc, 0 0 75px #67e6dc;
+    letter-spacing: 5px; 
+}
+@media (max-width:700px)
+{
+    .avatar{
+        flex-basis: 60%;
+    }
+     .friend_box{
+        flex-basis: 30%;
+        margin: 0 auto;
+     }
+}
+@media (max-width:1200px)
+{
+    .container{
+        flex-wrap: wrap;
+    }
+    .container>*{
+        flex-basis: 80%;
+        margin: 0 auto;
+    }
+    .friend_box{
+        margin: 0 auto;
+    }
+}
