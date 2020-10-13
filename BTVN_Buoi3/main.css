@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Kalam",sans-serif;
+}
+/* ======= header ======= */
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(238, 238, 238, 0.514);
+    padding: 20px;
+}
+.header h2{
+    font-size: 30px;
+}
+.header h2:hover{
+   color: #54fce5;
+}
+/* ====== menu ======= */
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #725494;
+    color: #fff;
+    position: sticky;
+    top: 0;
+}
+.menu li{
+    list-style-type: none;
+    padding: 12px 20px;
+}
+.menu li:hover{
+    background-color: #27133f;
+}
+.menu li{
+    position: relative;
+}
+.menu li >.list{
+    position: absolute;
+    display: none;
+    background-color: #725494;
+    left: 0;
+}
+.menu li:hover > .list{
+    display: block;
+    margin: 12px 0 0 0;
+}
+.list li >.list-1{
+    position: absolute;
+    display: none;
+    background-color: #725494;
+}
+.list li:hover >.list-1{
+    display: block;
+    top: 0;
+    left: 100%;
+}
+/* ===== container======= */
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.main > img{
+    position: relative;
+    left: 40%;
+}
+.main-text{
+    position: absolute;
+    top: 60%;
+}
+.main-text h1{
+    color: #725494;
+    font-size: 60px;
+}
+.main-text p{
+    color: #4f23a0;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+ button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    font-size: 16px;
+    background-color: #1f073a;
+    color: white;
+}
+ button:hover{
+    background-color: #f7f7f7;
+    color: #7631c5;
+}
+/* ==== content ===== */
+.content-1, .content-2{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+.content-main{
+    margin-left: 20px;
+}
+.content-main p{
+    margin-bottom: 15px;
+}
+/* ===== footer ====== */
+.footer{
+    background-color: black;
+    color: transparent;
+    -webkit-text-stroke: 5px rgb(248, 141, 70); 
+    letter-spacing: 5px; 
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+}
