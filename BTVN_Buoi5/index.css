@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0px 3px 5px rgba(141, 141, 141, 0.5);
+    z-index: 100000000;
+}
+.menu>a:last-child{
+    margin-right: 60px;
+}
+.button{
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 18px;
+    padding: 15px;
+}
+.button:hover{
+    background-color: rgb(178, 231, 238);
+}
+a{
+    text-decoration: none;
+    margin-right: 8px;
+}
+.fa {
+    margin-right: 5px;
+}
+.background{
+    background-image: url(https://scontent.fhan3-2.fna.fbcdn.net/v/t1.0-9/81127096_1233986503457520_6942916325924667392_o.jpg?_nc_cat=111&ccb=2&_nc_sid=e3f864&_nc_ohc=FwdExP7ZsfsAX8Z-3iQ&_nc_oc=AQmKeL1a-StYjx65vD08UdreDvlqo2AbrDSo5FJxuHrCvA6WGIAgQuZ1MfoX2e5Mtsc&_nc_ht=scontent.fhan3-2.fna&oh=4094659006ed0076ee9e4cab660e4049&oe=5FC1C182);
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.avatar{
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.avatar{
+    position:absolute;
+    background-image: url(https://scontent.fhan3-3.fna.fbcdn.net/v/t1.0-9/75402163_1184280015094836_2825570971568570368_o.jpg?_nc_cat=100&ccb=2&_nc_sid=cdbe9c&_nc_ohc=ECeUz354teUAX-Ogxzb&_nc_ht=scontent.fhan3-3.fna&oh=8d7cea37904185c92361b8fe95379489&oe=5FC20EC9);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+     border: 5px solid white ; 
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    top: 65%;
+    left: 50%;
+}
+.avatar > hr{
+    width: 1000px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+/* ------------------nav------------------- */
+.nav{
+    width: 80%;
+    display: flex;
+    margin: 8% auto;  
+}
+.img{
+    width: 500px;
+    height: 700px;
+    border-radius: 15px;
+}
+.text{
+    width: 40%;
+    color: black;
+    font-size: 18px;
+    margin-left: 5%; 
+}
+.text2{
+    width: 50%;
+    font-size: 18px;
+    margin-right: 5%;
+    margin-top: 0%;  
+}
+/* ---------------footer------------ */
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: 5px rgb(248, 141, 70); 
+}
