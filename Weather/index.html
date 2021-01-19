@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="text" id="search_city"  placeholder="Tên tỉnh/thành phố, VD: Hà Nội" 
+            onkeydown = "if (event.keyCode == 13)
+            document.getElementById('button').click()">
+            <input type="button" value="Tìm kiếm" onclick="searchInput()" id="button">
+        </div>
+        <div id="current">
+
+        </div>
+        <div id="forecast">
+            
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

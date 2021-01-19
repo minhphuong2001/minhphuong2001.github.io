@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.search{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+}
+.search *{
+    border-radius: 5px;
+    padding: 8px 0;
+    border: 1px solid #cfcccc;
+}
+.search input:first-child{
+    width: 80%;
+    margin-right: 10px;
+    padding: 0 10px;
+}
+.search input:last-child{
+    width: 20%;
+}
+#current{
+    margin-top: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+#current h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+#current .temperature{
+    font-size: 40px;
+    font-weight: bold;
+}
+.temperature::after{
+    content: "\00b0";
+}
+.current .date{
+    font-size: 20px;
+}
+.description{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 5px;
+}
+#current h4{
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: left;
+}
+#forecast{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.box__list{
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 600;
+}
