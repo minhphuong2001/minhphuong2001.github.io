@@ -173,17 +173,17 @@ checkAll.addEventListener("click", () => {
     }
 })
 
-function editTodoById(todoId) {
-    const todos = getAllTodo();
-    const todo = {
-        id, content, isCompleted
-    };
+// function editTodoById(todoId) {
+//     const todos = getAllTodo();
+//     const todo = {
+//         id, content, isCompleted
+//     };
 
-    const index = todos.findIndex(item => item.id === todoId);
-    todo[index].id == todo.id;
-    todo[index].content == todo.content;
-    todo[index].isCompleted == todo.isCompleted;
+//     const index = todos.findIndex(item => item.id === todoId);
+//     todo[index].id == todo.id;
+//     todo[index].content == todo.content;
+//     todo[index].isCompleted == todo.isCompleted;
 
-    storeTodo(todos);
-    document.location.reload();
-}
+//     storeTodo(todos);
+//     document.location.reload();
+// }
