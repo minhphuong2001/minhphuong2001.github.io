@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <h1>todos</h1>
+    <div class="container">
+        <div class="header">
+            <i id="check" class="fa fa-check" ></i>
+            <input type="text" name="" id="input" placeholder="What need to be done?">
+            <!-- <i class="fa fa-plus-circle" onclick="add()"></i> -->
+        </div>
+        <hr>
+        <div id="all-active">
+            <!-- <div class="item">
+                <input checked type="checkbox" class="checkbox" name="" id="">
+                <input type="text" name="" class="edit" id="" placeholder="test">
+                <i class="fa fa-times clear"></i>
+
+                
+                <input type="text" name="" class="edit text" onclick="editTodoById(${item.id})" placeholder=${item.content}>
+            </div> -->
+        </div>
+
+        <div id="footer" class="footer">
+            <span id="count-item">0 item left</span>
+            <div class="btn">
+                <button class="all" onclick="allTodo()">All</button>
+                <button class="active" onclick="active()">Active</button>
+                <button class="completed" onclick="completed()">Completed</button>
+                <button class="clear" onclick="clearCompleted()">Clear completed</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
