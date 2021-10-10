@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card .front img{
+    width:300px;
+    height:300px;
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+.card .front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+.front{
+    top: 0;
+    left: 0;
+    transform: rotateX(0deg);
+}
+.card:hover .front{
+    transform: rotateX(-180deg);
+}
+.card:hover .back{
+    transform: rotateX(0);
+}
+.back{
+    top: 0;
+    left: 0;
+    transform: rotateX(180deg);
+}
+.back .detail{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-50%);
+}
+.back .detail h2{
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.back .detail h2 span{
+    font-size: 18px;
+    color: #a7a7a7;
+}
+.back .icons a{
+    color: white;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    line-height: 36px;
+    transition: 0.5s;
+}
+.facebook:hover{
+    background-color:rgb(71, 71, 243) ;
+}
+.instagram:hover{
+    background: linear-gradient(45deg, #FFDC80,#FCAF45,#F77737,#F56040,#FD1D1D,#E1306C,#C13584,#833AB4,#5851DB, #405DE6);
+}
+.printerest:hover{
+    background-color: rgb(247, 36, 36);
+}
+.twitter:hover{
+    background-color: rgb(97, 150, 247);
+}
+.linkedin:hover{
+    background-color: rgb(38, 38, 243);
+}
+.back::before{
+    content:'';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1)
+}
