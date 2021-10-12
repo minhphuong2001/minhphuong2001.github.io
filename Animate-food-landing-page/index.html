@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Food</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/grid.css">
+    <link rel="icon" href="./assets/pho.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav">
+        <div class="mobile-move-item"></div>
+        <div class="mobile-nav__item active">
+            <a href="#home">
+                <i class='bx bxs-home'></i>
+            </a>
+        </div>
+        <div class="mobile-nav__item">
+            <a href="#about">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mobile-nav__item">
+            <a href="#menu">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mobile-nav__item">
+            <a href="#testimonials">
+                <i class='bx bxs-comment-dots'></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="nav">
+        <div class="menu-wrapper">
+            <a href="#home">
+                <div class="menu-wrapper__logo">
+                    Fresh Food
+                </div>
+            </a> 
+            <div class="menu-wrapper__center">
+                <a href="#home">
+                    <div class="menu-item active">
+                        Home
+                    </div>
+                </a>
+                <a href="#about">
+                    <div class="menu-item">
+                        About
+                    </div>
+                </a>
+                <a href="#menu">
+                    <div class="menu-item">
+                        Menu
+                    </div>
+                </a>
+                <a href="#testimonials">
+                    <div class="menu-item">
+                        Testimonials
+                    </div>
+                </a>
+            </div>
+            <div class="menu-wrapper__right">
+                <div class="cart">
+                    <i class='bx bx-cart-alt'></i>
+                </div>
+                <div class="toggle-mode">
+                    <i class='bx bxs-moon' id="theme-button"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOME -->
+    <section id="home">
+        <div class="home-container flex-center">
+            <div class="row container">
+                <div class="col-6 col-sm-12">
+                    <div class="home-container__slogan">
+                        <h1>Fresh Food</h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae eveniet ullam perferendis
+                            eos, nobis corrupti similique fuga ipsa minus at eius ipsam expedita quam aliquam
+                            perspiciatis voluptate qui dolore soluta.
+                        </p>
+                        <button class="order-btn">
+                            Order now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about flex-center">
+        <div class="container">
+            <div class="row about-container">
+                <div class="col-6 col-md-12">
+                    <img src="./assets/vegetable2.jpg" alt="" class="about-container__img">
+                </div>
+                <div class="col-6 col-md-12 about-main flex-center">
+                    <div class="about-main__content">
+                        <h3>We <span>create</span> delicious <span>memories for</span> you</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint eum suscipit, quo omnis labore
+                             excepturi dolorem saepe aliquid nesciunt voluptatibus vel ratione quidem reprehenderit, distinctio culpa aspernatur nemo corporis?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOD MENU -->
+    <section id="menu" class="menu-section flex-center">
+        <div class="container">
+            <div class="food-menu">
+                <h1>
+                    What will <span>you</span> eat today?
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repudiandae illo molestiae odit modi 
+                    aperiam nostrum quod consequatur, cum odio maiores? Cumque rem aut nesciunt eius. Vel aliquam molestias laborum.
+                </p>
+                <div class="food-category">
+                    <div class="zoom">
+                        <button class="active" data-food-type="all">
+                            All food
+                        </button>
+                    </div>
+                    <div class="zoom">
+                        <button data-food-type="salad">
+                            Salad
+                        </button>
+                    </div>
+                    <div class="zoom">
+                        <button data-food-type="vegetable">
+                            Vegatable
+                        </button>
+                    </div>
+                    <div class="zoom">
+                        <button data-food-type="noodle">
+                            Noodle
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item__wrapper all">
+                    <div class="row right-to-left">
+                        <div class="col-3 col-sm-6 food-item vegetable-type">
+                            <div class="item-wrap">
+                                <div class="item-wrap__img">
+                                    <img src="./assets/pho.jpg" alt="" class="img-holder">
+                                </div>
+                                <div class="item-wrap__info">
+                                    <div class="item-info-left">
+                                        <h3>Pho</h3>
+                                        <span>2$</span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <i class="bx bx-cart-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 food-item noodle-type">
+                            <div class="item-wrap">
+                                <div class="item-wrap__img">
+                                    <img src="./assets/bun-bo.jpg" alt="" class="img-holder">
+                                </div>
+                                <div class="item-wrap__info">
+                                    <div class="item-info-left">
+                                        <h3>Pho</h3>
+                                        <span>2$</span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <i class="bx bx-cart-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 food-item salad-type">
+                            <div class="item-wrap">
+                                <div class="item-wrap__img">
+                                    <img src="./assets/salad.jpg" alt="" class="img-holder">
+                                </div>
+                                <div class="item-wrap__info">
+                                    <div class="item-info-left">
+                                        <h3>Pho</h3>
+                                        <span>2$</span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <i class="bx bx-cart-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 food-item salad-type">
+                            <div class="item-wrap">
+                                <div class="item-wrap__img">
+                                    <img src="./assets/vegetable1.jpg" alt="" class="img-holder">
+                                </div>
+                                <div class="item-wrap__info">
+                                    <div class="item-info-left">
+                                        <h3>Pho</h3>
+                                        <span>2$</span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <i class="bx bx-cart-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row left-to-right" style="margin-top: 20px;">
+                        <div class="col-3 col-sm-6 food-item salad-type">
+                            <div class="item-wrap">
+                                <div class="item-wrap__img">
+                                    <img src="./assets/salad.jpg" alt="" class="img-holder">
+                                </div>
+                                <div class="item-wrap__info">
+                                    <div class="item-info-left">
+                                        <h3>Pho</h3>
+                                        <span>2$</span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <i class="bx bx-cart-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 food-item noodle-type">
+                            <div class="item-wrap">
+                                <div class="item-wrap__img">
+                                    <img src="./assets/pho.jpg" alt="" class="img-holder">
+                                </div>
+                                <div class="item-wrap__info">
+                                    <div class="item-info-left">
+                                        <h3>Pho</h3>
+                                        <span>2$</span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <i class="bx bx-cart-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 food-item noodle-type">
+                            <div class="item-wrap">
+                                <div class="item-wrap__img">
+                                    <img src="./assets/bun-bo.jpg" alt="" class="img-holder">
+                                </div>
+                                <div class="item-wrap__info">
+                                    <div class="item-info-left">
+                                        <h3>Pho</h3>
+                                        <span>2$</span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <i class="bx bx-cart-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-sm-6 food-item vegetable-type">
+                            <div class="item-wrap">
+                                <div class="item-wrap__img">
+                                    <img src="./assets/salad.jpg" alt="" class="img-holder">
+                                </div>
+                                <div class="item-wrap__info">
+                                    <div class="item-info-left">
+                                        <h3>Pho</h3>
+                                        <span>2$</span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <i class="bx bx-cart-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-12">
+                    <div class="review-wrap left-to-right">
+                        <div class="review-content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore nisi non
+                                molestias, minus laboriosam nostrum impedit iure facilis odio unde quia ad sunt corrupti
+                                dolores ratione voluptatibus quidem explicabo.
+                            </p>
+                            <div class="review-img bg-img"
+                                style="background-image: url(./assets/the-girl.jpg);">
+                            </div>
+                        </div>
+                        <div class="review-info">
+                            <h3>
+                                Anna Hattway
+                            </h3>
+                            <div class="rating">
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                                <i class="bx bxs-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-12">
+                    <div class="top-to-bottom">
+                        <div class="review-wrap active">
+                            <div class="review-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore nisi non
+                                    molestias, minus laboriosam nostrum impedit iure facilis odio unde quia ad sunt
+                                    corrupti
+                                    dolores ratione voluptatibus quidem explicabo.
+                                </p>
+                                <div class="review-img bg-img"
+                                    style="background-image: url(./assets/the-women.jpg);">
+                                </div>
+                            </div>
+                            <div class="review-info">
+                                <h3>
+                                    Yaya Adama
+                                </h3>
+                                <div class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                    <i class='bx bxs-star'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-12">
+                    <div class="review-wrap right-to-left">
+                        <div class="review-content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore nisi non
+                                molestias, minus laboriosam nostrum impedit iure facilis odio unde quia ad sunt corrupti
+                                dolores ratione voluptatibus quidem explicabo.
+                            </p>
+                            <div class="review-img bg-img"
+                                style="background-image: url(./assets/the-boy.jpg);">
+                            </div>
+                        </div>
+                        <div class="review-info">
+                            <h3>
+                                Daniel Jame
+                            </h3>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row footer-main">
+                <div class="col-6 col-md-12">
+                    <h1>
+                        <a href="#">Fresh Food</a>
+                    </h1>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut amet tenetur ducimus. Nemo illum velit nostrum aut, 
+                        reprehenderit maxime? Quas minima iure sunt id assumenda ratione necessitatibus veniam. Nam, atque.
+                    </p>
+                    <p>Email: minhphuongdo2001@gmail.com</p>
+                    <p>Phone: 0389247621</p>
+                    <p>Website: freshfood.com</p>
+                </div>
+                <div class="col-2 col-md-12">
+                    <h1>About us</h1>
+                    <br>
+                    <p>Our chefs</p>
+                    <p>Menu</p>
+                    <p>Testimonials</p>
+                    <p>Contact</p>
+                </div>
+                <div class="col-4 col-md-12">
+                    <h1>Subcrible & media</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto aspernatur doloremque rerum namullam obcaecati error asperiores temporibus 
+                        quo eum eaque sed odio vitae accusantium, dolorem nihil molestiae deserunt maxime!
+                    </p>
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter your email">
+                        <button>
+                            Subcribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class='bx bx-up-arrow-alt'></i></a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
