@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .col {
+        text-align: center;
+        /* background-color: #ccc; */
+        background-clip: content-box;
+        /* margin-top: 8px;
+        margin-bottom: 8px; */
+      }
+    </style>
+  </head>
+
+  <!-- l: pc
+        m: tablet
+        c: mobile
+    -->
+
+  <body>
+    <div class="grid wide">
+
+      <!-- .col.l-3*4>.item{Item $} -->
+      <div class="row">
+        <div class="col l-2 m-0 c-0">
+            <div class="item">Category</div>
+        </div>
+
+        <div class="col l-10 m-12 c-12">
+            <div class="content">
+                <div class="row">
+                   <div class="col l-2-4 m-4 c-12">
+                       <div class="item">Product 1</div>
+                   </div>
+                   <div class="col l-2-4 m-4 c-12">
+                       <div class="item">Product 2</div>
+                   </div>
+                   <div class="col l-2-4 m-4 c-12">
+                       <div class="item">Product 3</div>
+                   </div>
+                   <div class="col l-2-4 m-4 c-12">
+                       <div class="item">Product 4</div>
+                   </div>
+                   <div class="col l-2-4 m-4 c-12">
+                       <div class="item">Product 5</div>
+                   </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
