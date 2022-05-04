@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 50vh;
+    margin-top: 100px;
+    min-height: 100vh;
+    background-color: #10131c;
+}
+/* navigation */
+.navigation {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: #212532;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: 0.8s;
+}
+
+.navigation.active {
+    width: 200px;
+    height: 200px;
+    transition-delay: 0s;
+}
+
+.navigation span {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(calc(12px * var(--x)), calc(12px * var(--y)));
+    transition: transform 0.5s, width 0.5s, height 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+}
+
+.navigation.active span {
+    width: 40px;
+    height: 40px;
+    background-color: #333850;
+    transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
+}
+
+.navigation span ion-icon {
+    transition: 0.5s;
+    font-size: 0;
+}
+.navigation.active span ion-icon {
+    color: #fff;
+    font-size: 20px;
+}
+.navigation.active span:hover ion-icon {
+    color: #2dfc52;
+    filter: drop-shadow(0 0 2px #2dfc52) drop-shadow(0 0 5px #2dfc52) drop-shadow(0 0 10px #2dfc52);
+}
+
+/* menu */
+.menu {
+    position: relative;
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li {
+    position: absolute;
+    list-style: none;
+    left: 0;
+    transform-origin: 100px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(80px);
+}
+
+.menu.active li {
+    transform: rotate(calc(360deg / 8 * var(--i)));
+}
+
+.menu li a {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.menu li a:hover ion-icon {
+    color: #2dfc52;
+    filter: drop-shadow(0 0 2px #2dfc52) drop-shadow(0 0 5px #2dfc52);
+}
+
+.menu li ion-icon {
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.toggle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    transition: 1s;
+}
+.toggle ion-icon {
+    font-size: 30px;
+}
+
+.menu.active .toggle {
+    transform: rotate(315deg);
+}
+
+/* ghost */
+.ghost {
+    position: relative;
+    width: 100px;
+    height: 120px;
+    background-color: #fff;
+    margin-top: 50px;
+    border-radius: 100px 100px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animation-ghost 2s linear alternate infinite;
+}
+.ghost::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
+    border-radius: 0 0 100px 100px;
+    box-shadow: 20px 0 0 #fff, 40px 0 0 #fff, 60px 0 0 #fff, 80px 0 0 #fff;
+}
+.ghost::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 100px;
+    left: -10px;
+    box-shadow: 100px 0 0 #fff;
+}
+
+.ghost-body {
+    width: 100%;
+    max-width: 50%;
+    height: 50px;
+}
+.ghost-eyes {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 100px;
+    box-shadow: 30px 0 0 #000;
+}
+.ghost-mouth {
+    width: 100%;
+    max-width: 80%;
+    height: 20px;
+    margin: 10px auto;
+    background-color: #000;
+    border-radius: 0 0 100px 100px;
+    position: relative;
+}
+.ghost-mouth::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    top: 0;
+    left: 20%;
+}
+.ghost-mouth::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    top: 0;
+    right: 20%;
+}
+@keyframes animation-ghost {
+    to {
+        transform: translateY(40%);
+    }
+}
